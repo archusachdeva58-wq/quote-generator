@@ -1,12 +1,11 @@
 body{
-    background-image:url("jjj.jpg");
-    background-size:cover;
+   
     align-items:center;
     justify-content:center;
     display:flex;
     top:200px;
     position:relative;
-    background-repeat: no-repeat;
+   
 }
 .heading{
     color:#5C4F4A;
