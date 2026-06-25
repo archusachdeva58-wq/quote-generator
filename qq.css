@@ -1,0 +1,32 @@
+body{
+    background-image:url("jjj.jpg");
+    background-size:cover;
+    align-items:center;
+    justify-content:center;
+    display:flex;
+    top:200px;
+    position:relative;
+}
+.heading{
+    color:#5C4F4A;
+    font-weight:700;
+    font-size:30px;
+}
+    #qq{
+    font-size:24px;
+    font-weight:700;
+    color:#5C4F4A;
+    font-size:20px;
+    background-color: #FCFAEE;
+}
+.button{
+
+    margin:20px;
+    padding:10px;
+    height:40px;
+    width:100px;
+    align-items: center;
+    background-color: #E4D6A9;
+   color:black;
+}
+

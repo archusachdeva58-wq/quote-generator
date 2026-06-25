@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="qq.css">
+    <title>Document</title>
+     
+</head>
+<body>
+   <script>
+    
+     let currentindex = 1;
+ async function disp() {
+   
+
+  await( fetch(`https://dummyjson.com/quotes/${currentindex}`)
+        .then(res => (res.json()))
+        .then(
+            data => {
+            document.getElementById("qq").innerText = data.quote;}
+        ));
+}
+function next(){
+     currentindex++;
+     if(currentindex>=30){
+        currentindex=1;
+     }
+     disp();
+}
+function prev(){
+    currentindex--;
+    if(currentindex==0){
+        currentindex=30;
+    }
+    disp();
+}
+</script>
+<center>
+    <div class="di">
+  <h2 class="heading">Quote Generator</h2>
+   <p id="qq"></p>
+   <script>disp()</script>
+   <button class="button" onclick="next()">Next</button>
+   <button class="button" onclick="prev()">Back</button>
+   </center>
+</div>
+   
+</body>
+</html>
